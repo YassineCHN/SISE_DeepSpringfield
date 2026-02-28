@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Bart', 'Homer', 'Lisa', 'Maggie', 'Marge']
+
+roboflow:
+  workspace: milnas-workspace
+  project: simpsons-character-detection
+  version: 3
+  license: Private
+  url: https://app.roboflow.com/milnas-workspace/simpsons-character-detection/3
