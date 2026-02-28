@@ -1,0 +1,5 @@
+run,model,lr0,optimizer,augmentation,mAP50_val,mAP50_95_val,precision_val,recall_val,best_pt
+run_D_small_lr5e4_strong,yolov8s.pt,0.0005,AdamW,renforcée,0.8533418056635842,0.5284725229327585,0.7966016932868282,0.7599863587496505,/content/runs/detect/simpsons_experiments/run_D_small_lr5e4_strong/weights/best.pt
+run_C_small_lr1e3_std,yolov8s.pt,0.001,AdamW,standard,0.831800983407474,0.46762262181721875,0.740821485526466,0.8353971714649908,/content/runs/detect/simpsons_experiments/run_C_small_lr1e3_std/weights/best.pt
+run_A_nano_lr1e3_std,yolov8n.pt,0.001,AdamW,standard,0.7569768759012966,0.4649556970529709,0.715004693029824,0.6657550136299374,/content/runs/detect/simpsons_experiments/run_A_nano_lr1e3_std/weights/best.pt
+run_B_nano_lr5e4_strong,yolov8n.pt,0.0005,AdamW,renforcée,0.7340559772509513,0.4429323479421492,0.7985014888695712,0.6722752517835893,/content/runs/detect/simpsons_experiments/run_B_nano_lr5e4_strong/weights/best.pt
