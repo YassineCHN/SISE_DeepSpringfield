@@ -4,8 +4,6 @@ Projet de **détection d'objets** réalisé dans le cadre du cours de Deep Learn
 
 L'objectif est de détecter et localiser automatiquement les 5 personnages principaux des Simpsons (**Bart, Homer, Lisa, Maggie, Marge**) dans des images, en utilisant **YOLOv8** et le **transfer learning** depuis des poids pré-entraînés sur COCO.
 
-**Auteurs :** Miléna GORDIEN-PIQUET & Yassine CHENIOUR — 2025-2026
-
 ---
 
 ## 📁 Structure du dépôt
@@ -135,3 +133,7 @@ Le **run D** est sélectionné comme meilleur modèle.
 | Optimizer        | AdamW   |
 | Weight decay     | 5e-4    |
 | Warmup epochs    | 3       |
+
+---
+
+**Auteurs :** Miléna GORDIEN-PIQUET & Yassine CHENIOUR — 2025-2026
