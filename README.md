@@ -11,24 +11,31 @@ L'objectif est de détecter et localiser automatiquement les 5 personnages princ
 ## 📁 Structure du dépôt
 
 ```
-DeepSpringfield/
-├── train_simpson.ipynb          # Notebook d'entraînement (EDA + 4 expériences + sélection)
-├── evaluation_simpson.ipynb     # Notebook d'évaluation sur le jeu de test
-├── dataset/                     # Jeu de données au format YOLOv8
-│   ├── data.yaml                # Configuration des classes
+SISE_DeepSpringfield/
+├── README.md
+├── dataset/                          # Jeu de données au format YOLOv8
+│   ├── data.yaml                     # Configuration des classes
+│   ├── README.roboflow.txt
 │   ├── train/
 │   │   ├── images/
 │   │   └── labels/
 │   ├── valid/
 │   │   ├── images/
 │   │   └── labels/
-│   └── test/
-│       ├── images/
-│       └── labels/
+│   ├── test/
+│   │   ├── images/
+│   │   └── labels/
+│   └── zip/
+│       └── dataset_deepspringfield.zip
+├── docs/
+│   ├── DeepSpringfield.pdf           # Rapport final
+│   └── media/                        # Figures générées par les notebooks
 ├── models/
-│   └── best_simpsons_model.pt   # Poids du meilleur modèle
-├── rapport_deepspringfield.pdf  # Rapport final
-└── README.md
+│   ├── best_simpsons_model.pt        # Poids du meilleur modèle (run D)
+│   └── experiments_results.csv       # Tableau comparatif des 4 runs
+└── notebooks/
+    ├── train_simpson.ipynb           # Notebook d'entraînement
+    └── evaluation_simpson.ipynb      # Notebook d'évaluation
 ```
 
 ---
@@ -49,7 +56,7 @@ Elle installe automatiquement `torch`, `torchvision` et toutes les dépendances 
 
 ## 🚀 Ordre d'exécution
 
-### 1. Notebook d'entraînement — `train_simpson.ipynb`
+### 1. Notebook d'entraînement — `notebooks/train_simpson.ipynb`
 
 > À exécuter en premier. Génère le meilleur modèle sauvegardé sur Google Drive.
 
@@ -58,7 +65,7 @@ Elle installe automatiquement `torch`, `torchvision` et toutes les dépendances 
 3. Lancer les 4 expériences (~1h sur GPU T4)
 4. Le meilleur modèle est automatiquement sauvegardé sous `models/best_simpsons_model.pt`
 
-### 2. Notebook d'évaluation — `evaluation_simpson.ipynb`
+### 2. Notebook d'évaluation — `notebooks/evaluation_simpson.ipynb`
 
 > À exécuter après l'entraînement. Charge `best_simpsons_model.pt` et évalue sur le jeu de test.
 
